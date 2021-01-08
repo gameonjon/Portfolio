@@ -1,0 +1,198 @@
+/* 	The content is clipped - and no 
+scrolling mechanism is provided */
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+
+/* The content is not clipped, and it may be rendered outside the 
+left and right edges. This is default */
+.overflow-x-visible{
+    overflow-x: visible;
+}
+
+/* 	Should cause a scrolling mechanism to 
+be provided for overflowing boxes */
+.overflow-x-auto{
+    overflow-x: auto;
+}
+
+/* .font-sans{
+    font-family: sans-serif, Arial, Helvetica, 
+    'Times New Roman', Times, serif;
+}
+
+.font-light{
+    font-weight:300;
+} */
+
+
+p {
+    font-family: sans-serif, Arial, Helvetica, 
+    'Times New Roman', Times, serif;
+    font-weight:300;
+}
+
+.introduction{
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: #ffffff;
+    /* flex: 50%; */
+    /* padding: 10px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:3rem;
+    margin-right: auto;
+    /* font-size: ; */
+}
+
+
+
+.head{
+    background-color: rgba(4, 172, 172, 0.5);
+}
+
+.nav{
+
+    background-color:  #1e1e22;
+    padding: 15px;
+    height: 35px;
+    position:sticky;
+    margin-top: 5px;
+}
+
+.nav-list{
+    list-style-type: none;
+    float: right; 
+    margin-left:auto;
+    margin-right: auto;
+    /* position: relative; */
+    color: black;
+}
+
+.nav-item{
+    float: left;
+    padding: 0px 10px 0px 10px;
+    color: black;
+}
+
+.bg-darkblue{
+    background-color: #2d3748;
+}
+
+.bg-black{
+    background-color: #2C2C32;
+}
+
+.bg-teal{
+    background-color: rgb(61, 226, 182);
+}
+
+.transparant-3{
+    opacity: 0.3;
+}
+
+.transparant-5{
+    opacity: 0.5;
+}
+
+
+.vidAdjustRight{
+    float: right;
+    padding: 5%;
+}
+
+/* TESTING HOVER VIDEO HERE: */
+
+
+/*====================== */
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+  
+
+.flex-container{
+    display: flex;
+    flex-flow:row, wrap;
+    justify-content: left;
+}
+
+.fl-60{
+    flex: 60%;
+}
+
+.hidden{
+    display: none;
+}
+
+.px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.mr-2{
+    margin-right: 10%;
+}
+
+.gameDesc{
+    text-align: left;
+    margin-left: 10%;
+    font-size: 1.2rem;
+    margin-right: 15%;
+    color: whitesmoke;
+}
+.gameTitle{
+    text-decoration: underline;
+    font-size: 3rem;
+    color: salmon;
+    margin-left: 25%;
+    margin-bottom: 1%;
+}
+
+
+.-ml-1{
+    margin-left: -0.25rem;
+}
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content:center;
+}
+
+.rounded-box-left{
+    border-radius: 5px 50px 50px 5px;
+    background: #9147FF;
+    /* padding: 30px; */
+    /* padding-top: 1rem;
+    padding-bottom: 2rem; */
+    width: 40%;
+    height: 40%;
+    margin-top: 15px;
+}
+
+.rounded-box-right{
+    border-radius: 50px 5px 5px 50px;
+    background-color: #9144FF;
+    width: 40%;
+    height: 40%;
+    margin-top: 15px;
+    float: right;
+}
+
+
+@media (min-width: 1024px){
+    .lg\:flex {
+        display: flex;
+    }
+    .lg\:intro{
+        display:flex;
+        width: 35%;
+        padding-top: 20%;
+    }
+}
