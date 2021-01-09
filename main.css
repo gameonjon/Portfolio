@@ -1,23 +1,23 @@
-/* 	The content is clipped - and no 
+/* 	The content is clipped - and no
 scrolling mechanism is provided */
 .overflow-x-hidden{
     overflow-x: hidden;
 }
 
-/* The content is not clipped, and it may be rendered outside the 
+/* The content is not clipped, and it may be rendered outside the
 left and right edges. This is default */
 .overflow-x-visible{
     overflow-x: visible;
 }
 
-/* 	Should cause a scrolling mechanism to 
+/* 	Should cause a scrolling mechanism to
 be provided for overflowing boxes */
 .overflow-x-auto{
     overflow-x: auto;
 }
 
 /* .font-sans{
-    font-family: sans-serif, Arial, Helvetica, 
+    font-family: sans-serif, Arial, Helvetica,
     'Times New Roman', Times, serif;
 }
 
@@ -27,7 +27,7 @@ be provided for overflowing boxes */
 
 
 p {
-    font-family: sans-serif, Arial, Helvetica, 
+    font-family: sans-serif, Arial, Helvetica,
     'Times New Roman', Times, serif;
     font-weight:300;
 }
@@ -54,7 +54,7 @@ p {
 
 .nav{
 
-    background-color:  #1e1e22;
+    background-color: lightgray;
     padding: 15px;
     height: 35px;
     position:sticky;
@@ -63,7 +63,7 @@ p {
 
 .nav-list{
     list-style-type: none;
-    float: right; 
+    float: right;
     margin-left:auto;
     margin-right: auto;
     /* position: relative; */
@@ -96,28 +96,20 @@ p {
     opacity: 0.5;
 }
 
-
-.vidAdjustRight{
-    float: right;
-    padding: 5%;
+.rotate-5{
+    transform: rotate(0.25turn);
 }
-
-/* TESTING HOVER VIDEO HERE: */
-
-
-/*====================== */
-
 
 .center {
     position: absolute;
     top: 50%;
     text-align: center;
 }
-  
+
 
 .flex-container{
     display: flex;
-    flex-flow:row, wrap;
+    flex-flow:row;
     justify-content: left;
 }
 
@@ -153,7 +145,9 @@ p {
     margin-bottom: 1%;
 }
 
-
+.-ml-10{
+    margin-left: 5%;
+}
 .-ml-1{
     margin-left: -0.25rem;
 }
@@ -174,6 +168,35 @@ p {
     width: 40%;
     height: 40%;
     margin-top: 15px;
+
+    transition: transform .2s;
+}
+.rounded-box-left:hover{
+    transform:scale(1.5);
+}
+
+.zoom {
+    border-radius: 5px 50px 50px 5px;
+    background: #9147FF;
+    /* padding: 30px; */
+    /* padding-top: 1rem;
+    padding-bottom: 2rem; */
+    width: 35%;
+    height: 30%;
+    margin-top: 15px;
+    /* transition: transform .2s; */
+    transition: width .5s;
+}
+.zoom:hover{
+    /* transform: scale(1.5);  */
+    width: 60%;
+
+    /* transform: scaleX(1.5);
+    transform: scaleY(1.5); */
+    /* margin: 5%; */
+}
+.vidAdjustRight:hover{
+    width: 90%;
 }
 
 .rounded-box-right{
@@ -186,6 +209,19 @@ p {
 }
 
 
+.vidAdjustRight{
+    float: center;
+    padding: 5%;
+    width: 80%;
+    transition: width .2s;
+}
+
+/* TESTING HOVER VIDEO HERE: */
+
+
+/*====================== */
+
+
 @media (min-width: 1024px){
     .lg\:flex {
         display: flex;
@@ -195,4 +231,9 @@ p {
         width: 35%;
         padding-top: 20%;
     }
+}
+
+/* hide play button  */
+video::-webkit-media-controls {
+    display: none !important;
 }
