@@ -146,9 +146,10 @@ p {
     margin-bottom: 1%;
 }
 
-.-ml-10{
+.ml-10{
     margin-left: 5%;
 }
+
 .-ml-1{
     margin-left: -0.25rem;
 }
@@ -182,7 +183,7 @@ p {
     /* padding: 30px; */
     /* padding-top: 1rem;
     padding-bottom: 2rem; */
-    width: 35%;
+    width: 30%;
     height: 30%;
     margin-top: 15px;
     /* transition: transform .2s; */
