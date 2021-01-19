@@ -49,35 +49,34 @@ p {
 
 
 .head{
-    background-color: rgba(4, 172, 172, 0.5);
+    background-color: #00948E;
 }
 
 .nav{
-
-    background-color: lightgray;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #B1A8B9;
     padding: 15px;
-    height: 35px;
-    position:sticky;
-    margin-top: 5px;
+    height: 30px;
+    overflow: hidden;
 }
 
 .nav-list{
     list-style-type: none;
-    float: right;
-    margin-left:auto;
-    margin-right: auto;
-    /* position: relative; */
+    text-align: center;
     color: black;
 }
 
 .nav-item{
-    float: left;
-    padding: 0px 10px 0px 10px;
+    /* padding: 0px 10px 0px 10px; */
+    padding-left: 15px;
+    padding-right: 15px;
     color: black;
 }
 
-.bg-darkblue{
-    background-color: #2d3748;
+.bg-highlight{
+    background-color:#BBA1D5;
 }
 
 .bg-black{
