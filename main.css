@@ -70,13 +70,20 @@ p {
     padding: 10px;
     height: 30px;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .nav-list{
     list-style-type: none;
     text-align: center;
     color: black;
+}
+.nav-list-2{
+    list-style-type:none;
+    margin: 0 auto;
+    padding: 0 22px;
+    text-align: center;
+    z-index: 2;
 }
 
 .nav-item{
