@@ -14,23 +14,27 @@
         <!-- The rel attribute specifies the relationship between the current document and the linked document.
                                 Only used if the href attribute is present. -->
         <link rel="stylesheet" href="./main.css" />
+        <!-- <link rel="stylesheet" href="./main.scss"/> -->
+        
         <!-- INTEGRITY: attribute allows the browser to check the file 
             source to ensure that the code is never loaded if the source has
             been manpulated  
             CROSSORIGIN: attribute is present when a request is loaded-->
-        <link
+        <!-- <link
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous"/>
+        crossorigin="anonymous"/> ============= -->
         <!-- script is an element for the attribute src 
             script points to an external JS file-->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
+        <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script> -->
+
         <title>GameOnJon's Portfolio</title>        
     </head>
 
-    <nav class="nav opacity-75">
+    <nav class="nav " id="topNav">
         <ul class="nav-list-2">
             <li>
                 <!-- target="blank_" attribute opens the link in a new tab/window -->
@@ -42,8 +46,20 @@
         </ul>
     </nav>
 
+    <!-- <nav class="topNav" id="myTopNav">
+        <ul>
+            <li>
+                <a href="#Home">Home</a>
+                <a href="#Projects">Projects</a>
+                <a href="#About">About</a>
+                <a href="#Contact">Contact</a>
+            </li>
+        </ul>
+    </nav> -->
+
+    
     <header class="head">
-        <section>
+        <section id="Home">
             <!-- <div class="flex-container">
                 
             </div> -->
@@ -68,6 +84,7 @@
             needed or else it would have left the next item with 
             margin on the right -->
     <!-- <br />  -->
+
 
     <body class="bg-black">
 
@@ -145,7 +162,9 @@
                 </p>
             </div>
         </section>
-
+<!-- 
+        <script src="/muscles/orbs.js"></script> -->
+        <script src="./main.js"></script>
         
         
 

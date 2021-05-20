@@ -5,92 +5,11 @@ html,body{
     padding: 0px;
     overflow-x: hidden;
 }
-/* 	The content is clipped - and no
-scrolling mechanism is provided for horizontal axis*/
-.overflow-x-hidden{
-    overflow-x: hidden;
-}
-
-/* The content is not clipped, and it may be rendered outside the
-left and right edges. This is default */
-.overflow-x-visible{
-    overflow-x: visible;
-}
-
-/* 	Should cause a scrolling mechanism to
-be provided for overflowing boxes */
-.overflow-x-auto{
-    overflow-x: auto;
-}
-
-/* .font-sans{
-    font-family: sans-serif, Arial, Helvetica,
-    'Times New Roman', Times, serif;
-}
-
-.font-light{
-    font-weight:300;
-} */
-
-
 
 p {
     font-family: sans-serif, Arial, Helvetica,
     'Times New Roman', Times, serif;
     font-weight:300;
-}
-
-.introduction{
-    font-size: 3rem;
-    font-family: monospace;
-    font-weight: bold;
-    color: #ffffff;
-    /* flex: 50%; */
-    /* padding: 10px; */
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left:3rem;
-    margin-right: auto;
-    /* font-size: ; */
-}
-
-.leading-tight{
-    line-height: 1.6;
-}
-
-.head{
-    background-color: #00948E;
-}
-
-.nav{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    background-color: #B1A8B9;
-    padding: 10px;
-    height: 30px;
-    width: 100%;
-    /* overflow: hidden; */
-}
-
-.nav-list{
-    list-style-type: none;
-    text-align: center;
-    color: black;
-}
-.nav-list-2{
-    list-style-type:none;
-    margin: 0 auto;
-    padding: 0 22px;
-    text-align: center;
-    z-index: 2;
-}
-
-.nav-item{
-    /* padding: 0px 10px 0px 10px; */
-    padding-left: 15px;
-    padding-right: 15px;
-    color: black;
 }
 
 .bg-highlight{
@@ -101,8 +20,148 @@ p {
     background-color: #2C2C32;
 }
 
+.black-m1{
+    background-color: #EFEFF1;
+}
+.black-m2{
+    background-color: #772CE8;
+}
+.black-m3{
+    background-color: #BBA1D5;
+}
+
+.black-1d{
+    background-color: #0E0E10;
+}
+
+.black-2d{
+    background-color: #18181B;
+}
+
+.black-3d{
+    background-color: #1F1F23;
+}
+
+.bg-lightshade{
+    background-color: #D0D0D8;
+}
+
 .bg-teal{
     background-color: rgb(61, 226, 182);
+}
+
+.introduction{
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:3rem;
+    margin-right: auto;
+}
+
+.leading-tight{
+    line-height: 1.6;
+}
+
+/* .head{
+    background-color: #00948E;
+    height: 100%;
+} */
+
+.head{
+    background: linear-gradient(45deg, #f76f02, #2F4858, #9147FF);
+    height: 100%;
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+}
+
+    @keyframes gradient{
+        /* background position: x% y%; is the position on the screen */
+        0%{ 
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+
+.head-img{
+    background-image: url("./media/pier.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #B1A8B9;
+    padding: 10px;
+    height: 30px;
+    /* width: 100%; */
+    /* overflow: hidden; */
+    opacity: 0.85;
+}
+
+.nav a {
+    font-size: 0.8em;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.nav a:hover{
+    font-size: medium;
+    color: black;
+    opacity: 1;
+}
+
+.nav a.active{
+    font-size: medium;
+    color: black;
+    opacity: 1;
+}
+
+    @media screen and (max-width: 736px){
+        #topNav{
+            display: none;
+        }
+    }
+
+.topNav a{
+    float: left;
+}
+
+.nav-list{
+    list-style-type: none;
+    text-align: center;
+    color: black;
+}
+.nav-list-2{
+    list-style-type:none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.nav-item{
+    /* padding: 0px 10px 0px 10px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    opacity: 0.35;
 }
 
 .transparant-3{
@@ -182,6 +241,7 @@ p {
     justify-content:center;
 }
 
+
 .rounded-box-left{
     border-radius: 5px 50px 50px 5px;
     background: #9147FF;
@@ -238,11 +298,6 @@ p {
     width: 80%;
     transition: width .2s;
 }
-
-/* TESTING HOVER VIDEO HERE: */
-
-
-/*====================== */
 
 
 @media (min-width: 1024px){
