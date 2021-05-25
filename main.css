@@ -1,4 +1,4 @@
-html,body{
+html, body{
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -45,7 +45,9 @@ p {
 .bg-lightshade{
     background-color: #D0D0D8;
 }
-
+.bg-light{
+    background-color: #FFF6ED;
+}
 .bg-teal{
     background-color: rgb(61, 226, 182);
 }
@@ -65,14 +67,29 @@ p {
     line-height: 1.6;
 }
 
-/* .head{
-    background-color: #00948E;
-    height: 100%;
-} */
+.head-intro{
+    font-size: 4rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.secTitle{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #f76f02;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.15em;
+}
+
 
 .head{
     background: linear-gradient(45deg, #f76f02, #2F4858, #9147FF);
-    height: 100%;
+    height: 70%;
     background-size: 200% 200%;
     animation: gradient 10s ease infinite;
 }
@@ -117,10 +134,19 @@ p {
     letter-spacing: 0.25em;
     text-decoration: none;
     text-transform: uppercase;
+    font-size: medium;
+    color: black;
+    opacity: 1;
 
 }
 
 .nav a:hover{
+    font-size: medium;
+    color: black;
+    opacity: 1;
+}
+
+.active{
     font-size: medium;
     color: black;
     opacity: 1;
@@ -136,12 +162,12 @@ p {
         #topNav{
             display: none;
         }
+
+        .head-intro{
+            font-size: 2rem;
+        }
     }
-
-.topNav a{
-    float: left;
-}
-
+    
 .nav-list{
     list-style-type: none;
     text-align: center;
@@ -154,6 +180,8 @@ p {
     text-align: center;
     z-index: 2;
 }
+
+
 
 
 .nav-item{
@@ -185,7 +213,6 @@ p {
     top: 50%;
     text-align: center;
 }
-
 
 .flex-container{
     display: flex;
@@ -240,6 +267,7 @@ p {
 .justify-center{
     justify-content:center;
 }
+
 
 
 .rounded-box-left{

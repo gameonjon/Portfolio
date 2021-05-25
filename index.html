@@ -27,14 +27,46 @@
         crossorigin="anonymous"/> ============= -->
         <!-- script is an element for the attribute src 
             script points to an external JS file-->
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
 
         <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script> -->
 
         <title>GameOnJon's Portfolio</title>        
     </head>
 
-    <nav class="nav " id="topNav">
+
+    <script>
+        var i = 0;
+        var txt = 'Hi, my name is Jon!';
+        var speed = 50;
+
+        function typewriter(){
+            if(i < txt.length){
+                document.getElementById("homeIntro").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typewriter, speed);
+            }
+        }
+
+    </script>
+
+    
+    <header class="head">
+        <section class="head-intro" id="Home">
+            <body onload="typewriter()"></body>
+            <div>
+                <h1 id="homeIntro"><!-- GameOnJon was here... --></h1>
+
+                <!-- <object type="image/svg+xml" 
+                data="./media/programmer.svg" 
+                class="-ml-1 hidden lg:intro" >
+                    there should be an image here
+                </object> -->
+            </div>
+        </section>
+    </header>
+
+    <nav class="nav" id="topNav">
         <ul class="nav-list-2">
             <li>
                 <!-- target="blank_" attribute opens the link in a new tab/window -->
@@ -46,38 +78,6 @@
         </ul>
     </nav>
 
-    <!-- <nav class="topNav" id="myTopNav">
-        <ul>
-            <li>
-                <a href="#Home">Home</a>
-                <a href="#Projects">Projects</a>
-                <a href="#About">About</a>
-                <a href="#Contact">Contact</a>
-            </li>
-        </ul>
-    </nav> -->
-
-    
-    <header class="head">
-        <section id="Home">
-            <!-- <div class="flex-container">
-                
-            </div> -->
-            <div class = "flex justify-center px-8">
-                <h1 class="introduction">
-                    GameOnJon was here...
-                </h1>
-
-                <object type="image/svg+xml" 
-                data="./media/programmer.svg" 
-                class="-ml-1 hidden lg:intro" >
-                    there should be an image here
-                </object>
-            </div>
-        </section>
-        
-    </header>
-
     
 
     <!-- not too sure why but this break
@@ -85,8 +85,10 @@
             margin on the right -->
     <!-- <br />  -->
 
-
     <body class="bg-black">
+
+        <br id="Projects">
+        <h1 class="secTitle">PROJECTS</h1>
 
         <!-- second look/play -->
         <section class="flex-container ml-10">
@@ -162,9 +164,16 @@
                 </p>
             </div>
         </section>
+
+        <br id="About">
+        <h1 class="secTitle">ABOUT</h1>
 <!-- 
         <script src="/muscles/orbs.js"></script> -->
-        <script src="./main.js"></script>
+        <!-- <script src="assets/js/jquery.min.js"></script> -->
+        <!-- <script src="css-tricks.js"></script> -->
+        <!-- <script src="main.js"></script> -->
+        <!-- <script src="active.js"></script> -->
+        <!-- <script src="activeNav.js"></script> -->
         
         
 
