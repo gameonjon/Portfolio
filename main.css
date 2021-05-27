@@ -219,6 +219,10 @@ p {
     flex-flow:row;
     justify-content: left;
 }
+.flexRevRow{
+    flex-flow: row-reverse;
+    /* justify-content: right; */
+}
 
 .fl-60{
     flex: 60%;
@@ -277,30 +281,42 @@ p {
 .rounded-box-left{
     border-radius: 5px 50px 50px 5px;
     background: #9147FF;
-    /* width: 70%; */
     height: 30%;
     width: 60em;
+}
 
-    /* height: 22.5em; */
-    /* margin-top: 15px; */
+.rounded-box-right{
+    border-radius: 50px 5px 5px 50px;
+    background: #9144FF;
+    height: 100%;
+    width: 60em;
+}
+
+.box-left{
+    width: 60em;
 }
 
 .vidAdjustR{
     float: right;
     padding: 5%;
-    /* width: 85%; */
     width: 30em;
+}
+
+.adjustL{
+    float: left;
+    padding: 5%;
+    width: 35em;
 }
 
 @media screen and (max-width: 1080px){
     .flex-container{
         flex-flow: column;
     }
-    .rounded-box-left{
+    .rounded-box-left, .rounded-box-right{
         background: inherit;
         width: 100%;
     }
-    .vidAdjustR{
+    .vidAdjustR, .adjustL{
         float: unset;
         width: 60%;
         display: block;
@@ -309,10 +325,11 @@ p {
     }
 }
 @media screen and (max-width:780px) {
-    .vidAdjustR{
+    .vidAdjustR, .adjustL, .box-left{
         width: 100%;
         padding: 0%;
     }
+
 }
 
 .zoom {
@@ -341,15 +358,6 @@ p {
 
 .vidAdjustRight:hover{
     width: 90%;
-}
-
-.rounded-box-right{
-    border-radius: 50px 5px 5px 50px;
-    background-color: #9144FF;
-    width: 40%;
-    height: 40%;
-    margin-top: 15px;
-    float: right;
 }
 
 
