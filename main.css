@@ -4,6 +4,7 @@ html, body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    /* overflow: scroll; */
 }
 
 p {
@@ -18,6 +19,11 @@ p {
 
 .bg-black{
     background-color: #2C2C32;
+    /* background-color: #3E3D43; */
+}
+
+.bg-body2{
+    background-color: #D0D0D8;
 }
 
 .black-m1{
@@ -51,6 +57,9 @@ p {
 .bg-teal{
     background-color: rgb(61, 226, 182);
 }
+.titleColor{
+   color: #2F4858;
+}
 
 .introduction{
     font-size: 3rem;
@@ -79,8 +88,9 @@ p {
 
 .secTitle{
     text-decoration: underline;
-    font-weight: bold;
-    color: #f76f02;
+    font-weight: bolder;
+    /* color: #f76f02; */
+    color: white;
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.15em;
@@ -115,6 +125,10 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.link{
+    color: #FFB5FF;
 }
 
 .nav{
@@ -216,7 +230,7 @@ p {
 
 .flex-container{
     display: flex;
-    flex-flow:row;
+    flex-flow: row;
     justify-content: left;
 }
 .flexRevRow{
@@ -226,6 +240,7 @@ p {
 
 .fl-60{
     flex: 60%;
+    width: 50%;
 }
 
 .hidden{
@@ -246,14 +261,17 @@ p {
     text-align: left;
     margin-left: 10%;
     font-size: 1.2rem;
-    margin-right: 15%;
+    margin-right: 10%;
+    margin-top: 1%;
     color: whitesmoke;
 }
 .gameTitle{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 2.5rem;
-    color: salmon;
+    /* color: salmon; */
+    color: white;
     margin-bottom: 1%;
+    margin-top: 1%;
     text-align: center;
 }
 
@@ -282,37 +300,54 @@ p {
     border-radius: 5px 50px 50px 5px;
     background: #9147FF;
     height: 30%;
-    width: 60em;
+    /* width: 60em; */
+    padding: 2%;
 }
 
 .rounded-box-right{
     border-radius: 50px 5px 5px 50px;
     background: #9144FF;
     height: 100%;
-    width: 60em;
-}
-
-.box-left{
-    width: 60em;
+    /* width: 60em; */
+    padding: 2%;
 }
 
 .vidAdjustR{
     float: right;
-    padding: 5%;
-    width: 30em;
-}
-
-.adjustL{
-    float: left;
-    padding: 5%;
+    /* padding: 5%; */
     width: 35em;
 }
-
+.width-20{
+    width: 35em;
+}
+.pd-l{
+    padding-left: 20em;
+}
+.width-40{
+    width: 47%;
+}
+.fl-40{
+    flex: 40%;
+}
+.adjustL{
+    float: left;
+    /* padding: 5%; */
+    width: 35em;
+}
+@media screen and (min-width:1080px){
+    .box-left{
+        width: 60em;
+    }
+}
 @media screen and (max-width: 1080px){
     .flex-container{
         flex-flow: column;
     }
+    .gameTitle{
+        order: 1;
+    }
     .rounded-box-left, .rounded-box-right{
+        order: 2;
         background: inherit;
         width: 100%;
     }
@@ -325,7 +360,7 @@ p {
     }
 }
 @media screen and (max-width:780px) {
-    .vidAdjustR, .adjustL, .box-left{
+    .vidAdjustR, .adjustL{
         width: 100%;
         padding: 0%;
     }
