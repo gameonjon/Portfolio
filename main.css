@@ -86,10 +86,45 @@ p {
     text-decoration: none;
     text-transform: uppercase;
 }
+.icons{
+    font-size: 2em;
+}
+.icon{
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.icons a:link{
+    text-decoration: none;
+}
+.icon .icon-text{
+    visibility: hidden;
+    width: max-content;
+    color: #FFB5FF;
+    padding: 5px 10px;
+    /* font-size: 0.55em; */
+    /* margin: 0 5px; */
+    font-size: large;
+    
+    /* background-color: transparent; */
+    border: solid 1px !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 3em;
+    
+    /* position: relative; */
+    position: absolute;
+}
+.icon:hover{
+    color: #FFB5FF;
+}
+.icon:hover .icon-text{
+    visibility: visible;
+
+    /* width: auto; */
+}
 
 .input{
-    
-    text-align: center;
     padding: 0 3.75em;
     
     font-weight: bold;
@@ -97,7 +132,6 @@ p {
 
     font-size: 0.7em;
     letter-spacing: 0.25em;
-    text-decoration: none;
     text-transform: uppercase;
 
     color: #ffffff !important;
@@ -184,14 +218,13 @@ p {
 }
 .inp-name{
 
-    
     font-weight: bold;
     line-height: 2em;
     letter-spacing: 0.2em;
-    text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2em;
     color: whitesmoke;
 }
+
 .inp-text{
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 0.25em;
@@ -275,7 +308,7 @@ p {
 .con-list{
     list-style-type: none;
     text-align: left;
-    margin: 0% 5%;
+    margin: 0;
     align-self: unset;
 }
 
@@ -445,13 +478,25 @@ p {
     width: 35em;
 }
 .width-20{
-    width: 35em;
+    width: 20%;
 }
 .pd-l{
     padding-left: 20em;
 }
+.width-30{
+    width: 30%;
+}
 .width-40{
-    width: 47%;
+    width: 40%;
+}
+.width-60{
+    width: 60%;
+}
+.width-70{
+    width: 70%;
+}
+.width-80{
+    width: 80%;
 }
 .fl-40{
     flex: 40%;
@@ -518,17 +563,28 @@ p {
 
 }
 
-.zoom {
+/* .zoom {
     border-radius: 5px 50px 50px 5px;
     background: #9147FF;
     width: 30%;
     height: 30%;
     margin-top: 15px;
     transition: width .5s;
+} */
+.zoom{
+    padding: 10px 5px;
+    width: 20px;
+
+    background-color: transparent;
+    border: solid 1px !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 3em;
+
+    transition: width .5s;
 }
 .zoom:hover{
     /* transform: scale(1.5);  */
-    width: 60%;
+    width: auto;
 
     /* transform: scaleX(1.5);
     transform: scaleY(1.5); */

@@ -15,6 +15,8 @@
                                 Only used if the href attribute is present. -->
         <link rel="stylesheet" href="./main.css" />
         <!-- <link rel="stylesheet" href="./main.scss"/> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
         <!-- INTEGRITY: attribute allows the browser to check the file 
             source to ensure that the code is never loaded if the source has
@@ -178,13 +180,11 @@
         <br id="Contact">
         <h1 class="secTitle">Contact</h1> 
 
-        <section class="fl-box wid-100"><h1 class="gameTitle">OR</h1></section>
-
         <section class="flex-container">
-            <div class="fl-box">
-                <form method="POST" action="#">
+            <div class="fl-box width-60">
+                <form method="POST" action="mailto:jonathanalfaro51@gmail.com" name="conForm">
                     <section class="flex-container">
-                        <div class="fl-box">
+                        <div class="fl-box " id="">
                             <label for="Name" class="inp-name">Name:</label>
                             <input type="text" name="Name" class="inp-text">
                         </div>
@@ -198,24 +198,53 @@
                         <textarea name="Message" rows="8" class="inp-text inp-mess"></textarea>
                     </section>
 
+                                    
+                    <input type="submit" value="Submit">    
                     <button type="submit" id="btn" class="input">Send Message</button>
                 </form>
 
-                
-            </div>
+            </div> 
 
             <div class="conLine"></div>
 
-            <div class="fl-box align-no">
+            <div class="fl-box width-40">
                 
                 <ul class="con-list">
-                    <li>
-                        <h1 class="inp-name con-name">Email: </h1>
-                        <a href="#" class="link con-info">jonathanalfaro51@gmail.com</a>
+                    
+                    <!-- EMAIL -->
+                    <li class="icons">
+                        <a href="mailto:jonathanalfaro51@gmail.com" class="icon fa fa-envelope">
+                            <span class="icon-text">jonathanalfaro51@gmail.com</span>
+                        </a>
                     </li>
-                    <li>
-                        
+                    <!-- GITHUB ICON/LINK -->
+                    <li class="icons">
+                        <a href="https://github.com/gameonjon" class="icon fa fa-github" target="_blank">
+                            <span class="icon-text">github.com/gameonjon</span>
+                        </a>
                     </li>
+                    <!-- STACK OVERFLOW -->
+                    <li class="icons">
+                        <a href="https://stackoverflow.com/users/15652451/gameon-jon" class="icon fa fa-stack-overflow" target="_blank">
+                            <span class="icon-text">stackoverflow.com/users/15652451/gameon-jon</span>
+                        </a>
+                    </li>
+                    <!-- LINKEDIN -->
+                    <li class="icons">
+                        <a href="inkedin.com/in/gameonjon" class="icon fa fa-linkedin" target="_blank">
+                            <span class="icon-text">inkedin.com/in/gameonjon</span>
+                        </a>
+                    </li>
+                    <!-- TWITCH -->
+                    <li class="icons">
+                        <a href="https://www.twitch.tv/gameonjon" class="icon fa fa-twitch" target="_blank">
+                            <span class="icon-text">twitch.tv/gameonjon</span>
+                        </a>
+                    </li>
+
+
+
+
                 </ul>
                 
 
