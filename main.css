@@ -95,6 +95,7 @@ p {
 }
 .icon{
     color: white;
+    color: #009574;
     position: relative;
     display: inline-block;
 }
@@ -103,7 +104,7 @@ p {
     text-decoration: none;
 }
 .icon .icon-text{
-    visibility: hidden;
+    /* visibility: hidden; */
     width: max-content;
     /* color: #FFB5FF; */
     padding: 5px 10px;
@@ -171,7 +172,7 @@ p {
 }
 li{
     line-height: normal;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 .head-intro{
     font-size: 4rem;
@@ -191,8 +192,9 @@ li{
 .secTitle{
     text-decoration: underline;
     font-weight: bolder;
-    /* color: #f76f02; */
-    color: white;
+    color: #f76f02;
+    /* color: #FF5431; */
+    /* color: white; */
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.15em;
@@ -253,6 +255,7 @@ li{
 }
 
 .link{
+    /* color: #FFB5FF; */
     color: #FFB5FF;
 }
 
@@ -270,6 +273,8 @@ li{
 
 .foot{
     background-color: #B1A8B9;
+    /* background-color: #2C2C32 ;
+    opacity: 50%; */
     /* padding: 10px; */
     height: fit-content;
     opacity: 0.85;
@@ -357,7 +362,7 @@ li{
         }
 
         .head-intro{
-            font-size: 2rem;
+            font-size: 2em !important;
         }
 
         .icon .icon-text{
@@ -466,6 +471,7 @@ li{
 
 .conLine{   /*contact line division*/
     border-right: solid 2px #efefef;
+    border-color: #9147FF;
 }
 
 .hidden{
@@ -495,7 +501,7 @@ li{
     /* text-decoration: underline; */
     font-size: 2.5rem;
     /* color: salmon; */
-    color: white;
+    color: #00CFA8;
     margin-bottom: 1%;
     margin-top: 1%;
     margin: 1%;
@@ -526,7 +532,8 @@ li{
     line-height: 2em;
     letter-spacing: 0.1em;
     font-size: 1.5rem;
-    color: white;
+    /* color: white; */
+    color: #00CFA8;
     margin: 0 5%;
     text-align: center;
 }
@@ -600,6 +607,7 @@ li{
     .conLine{
         border-right: none;
         border-bottom: solid 2px #efefef;
+        border-color: #9147FF;
         width: 50%;
         margin: 5% 0%;
         align-self: center;
@@ -607,7 +615,9 @@ li{
     .foot .conLine{
         border-bottom: none;
         border-right: solid 2px #efefef;
+        border-color: #9147FF;
         margin: 0;
+        width: 120%;
         align-self: auto;
     }
     .flex-container{
@@ -619,12 +629,19 @@ li{
     .gameTitle{
         order: 1;
     }
+    .head-intro{
+        font-size: 3em;
+    }
     .foot .flex-container{
         flex-flow: unset;
     }
     /* .foot section .fl-box{
         width: initial;
     } */
+    .icon .icon-text{
+        /* letter-spacing: normal; */
+        font-size: normal;
+    }
     .rounded-box-left, .rounded-box-right{
         order: 2;
         background: inherit;
@@ -643,6 +660,7 @@ li{
     .conLine{
         border-right: none;
         border-bottom: solid 2px #efefef;
+        border-color: #9147FF;
         width: 50%;
         margin: 5% 0%;
         align-self: center;
