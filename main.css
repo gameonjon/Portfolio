@@ -94,7 +94,7 @@ p {
     font-size: x-large;
 }
 .icon{
-    color: white;
+    /* color: white; */
     color: #009574;
     position: relative;
     display: inline-block;
@@ -113,15 +113,19 @@ p {
     font-size: large;
     
     /* background-color: transparent; */
-    border: solid 1px !important;
+    /* border: solid 1px !important;
     border-color: rgba(255, 255, 255, 0.15) !important;
-    border-radius: 3em;
+    border-radius: 3em; */
     
     /* position: relative; */
     position: absolute;
 }
+/* .btn:hover, */
 .icon:hover{
-    color: #FFB5FF;
+    /* color: #FFB5FF; */
+    color: #2C2C32;
+    -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 .icon:hover .icon-text{
     visibility: visible;
@@ -152,6 +156,12 @@ p {
     color: #312450 !important;
     margin: 2% 5%;
 }
+.btn-pdf:hover{
+    background-color: #f76f02;
+    -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+}
 .titleColor{
    color: #2F4858;
 }
@@ -171,7 +181,7 @@ p {
     line-height: 1.6;
 }
 li{
-    line-height: normal;
+    /* line-height: normal; */
     letter-spacing: 0.1em;
 }
 .head-intro{
