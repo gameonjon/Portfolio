@@ -95,7 +95,8 @@ p {
 }
 .icon{
     /* color: white; */
-    color: #009574;
+    /* color: #009574; */
+    color: #FCEAFF;
     position: relative;
     display: inline-block;
 }
@@ -119,6 +120,7 @@ p {
     
     /* position: relative; */
     position: absolute;
+    text-decoration: underline;
 }
 /* .btn:hover, */
 .icon:hover{
@@ -287,8 +289,13 @@ li{
     opacity: 50%; */
     /* padding: 10px; */
     height: fit-content;
-    opacity: 0.85;
+    /* opacity: 0.5; */
+
+    background: linear-gradient(45deg, #9147FF, #B75D00);
+    background-size: 200% 200%;
+    animation: gradient 10s ease-out infinite;
 }
+
 .foot section ul{
     /* display: flex; */
     justify-content: flex-start;
