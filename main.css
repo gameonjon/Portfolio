@@ -199,6 +199,18 @@ li{
 
     align-self: center;
 }
+#homeIntro{
+    margin-bottom: 0;
+    color: #2C2C32;
+    line-height: 1;
+}
+.role{
+    margin-top: 0;
+    font-size: xx-large;
+    /* text-align: left; */
+    text-decoration: overline;
+    color: #2C2C32;
+}
 
 
 .secTitle{
@@ -380,6 +392,9 @@ li{
 
         .head-intro{
             font-size: 2em !important;
+        }
+        .role{
+            font-size: large !important;
         }
 
         .icon .icon-text{
@@ -648,6 +663,9 @@ li{
     }
     .head-intro{
         font-size: 3em;
+    }
+    .role{
+        font-size: x-large;
     }
     .foot .flex-container{
         flex-flow: unset;
